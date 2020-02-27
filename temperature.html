@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let temperature = function (c) {
+            this.c = c;
+
+            this.getconvertf = function () {
+                return (this.c * 18 + 32)
+            }
+            this.getconvertk = function () {
+                return (this.c + 273.15)
+            }
+            this.getc = function () {
+                return c;
+            }
+            this.setc = function () {
+                this.c = c;
+            }
+
+        }
+        let Temperature = new temperature(25);
+
+        let c = Temperature.getc();
+        let f=Temperature.getconvertf();
+        let k=Temperature.getconvertk();
+        
+        alert(c);
+        alert(f);
+        alert(k);
+
+   
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
